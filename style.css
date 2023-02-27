@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+body{
+    background-color:#9DC08B;
+}
+
+.start-screen,
+.score-container{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#start-btn,
+#restart{
+    font-size:1.3rem;
+    font-weight: bold;
+    padding: 0.5rem 1.8rem;
+    border-radius: 0.2rem;
+    transition: padding 0.3s ease-in;
+}
+#start-btn:hover{
+    padding: 0.7rem 2rem;
+    
+}
+#restart{
+    margin-top:15px ;
+}
+#restart:hover{
+    padding: 0.7rem 2rem;
+}
+#display-container{
+    background-color: #fff;
+    padding: 50px 30px;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+.header{
+    margin-bottom:30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c0bfd2;
+}
+.timer-div{
+    background-color:#e84a621a ;
+    width: 100px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+}
+.question{
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+.option-div{
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    border: 1px solid #c0bfd2;
+    border-radius: 8px;
+
+}
+.option-div:hover{
+    background-color: #e6e5fdaa;
+}
+.option-div:disabled{
+    color: #000;
+    cursor: not-allowed;
+}
+#next-btn{
+    font-size: 16px;
+    margin-top: 24px;
+    background-color:#e84a63 ;
+    padding: 10px 20px ;
+    color: white;
+    border-radius: 5px;
+    float: right;
+
+
+}
+
+.hide{
+    display: none;
+}
+.incorrect {
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f ;
+}
+
+.correct {
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+
+#user-score{
+    font-size:20px;
+    color: #fff;
+}
